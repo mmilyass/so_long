@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 15:50:43 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/01/08 21:44:55 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/01/09 11:21:14 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static t_window_data	*load_images_bonus_help(t_window_data *data)
 	int	w;
 	int	h;
 
-	data->enemy[0] = mlx_xpm_file_to_image(data->mlx, "textures/enemy1.xpm", &w,
+	data->enemy[0] = mlx_xpm_file_to_image(data->mlx, "textures/enemy10.xpm", &w,
 			&h);
 	if (data->enemy[0] == NULL)
 		return (NULL);

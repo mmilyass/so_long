@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 22:46:06 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/01/08 17:13:49 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/01/09 10:32:38 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	game_loop(t_window_data *data)
 		&& data->s <= 0)
 	{
 		player_run(data);
-		ft_printf("movements : %d\n", ++data->movement_counter);
 		data->s++;
 	}
 	return (0);

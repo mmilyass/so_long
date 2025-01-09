@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 09:54:49 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/01/08 16:22:28 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/01/09 11:13:02 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ static t_window_data	*do_the_half_job(char *map_file)
 	data = player_position(data);
 	if (map_checker(data) == 2)
 	{
+		ft_printf("Error\ninvalid map !!\n");
 		clean_up(data);
 		return (NULL);
 	}
@@ -57,5 +58,5 @@ int	main(int argc, char **argv)
 		mlx_hook(data->win, 17, 0, exit_window, data);
 		mlx_loop(data->mlx);
 	}
-	ft_printf("enter please a valid argument or just one argument!\n");
+	ft_printf("Error\nenter please a valid argument or just one argument!\n");
 }

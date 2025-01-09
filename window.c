@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 17:02:22 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/01/08 17:02:23 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/01/09 11:12:34 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,12 @@ t_window_data	*window_size(t_window_data *data)
 		height_len++;
 	data->width = width_len * BOX_SIZE;
 	data->height = height_len * BOX_SIZE;
+	if (data->width > 1920 || data->height > 1080)
+	{
+		ft_printf("Error\nthe map is too large !!\n");
+		clean_up(data);
+		exit(0);
+	}
 	return (data);
 }
 

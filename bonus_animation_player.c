@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 11:19:46 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/01/08 21:34:26 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/01/09 10:30:11 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ void	draw_player(t_window_data *data, int width, int height)
 	else if (data->derection[XK_d] == 1 || data->derection[XK_s] == 1)
 		mlx_put_image_to_window(data->mlx, data->win,
 			data->run_frames[data->run_right_count], width, height);
+	display_string_win(data);
 	data->run_right_count = (data->run_right_count + 1) % 6;
 	data->run_left_count = (data->run_left_count + 1) % 6;
 	data->run_up_count = (data->run_up_count + 1) % 2;

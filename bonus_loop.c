@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 12:40:09 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/01/08 21:32:00 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/01/09 10:29:50 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,6 @@ int	game_loop_bonus(t_window_data *data)
 	if ((data->derection[XK_d] || data->derection[XK_a] || data->derection[XK_w]
 			|| data->derection[XK_s]) && data->s <= 0)
 	{
-		display_string_win(data);
 		player_run_bonus(data);
 		data->s = 1;
 	}

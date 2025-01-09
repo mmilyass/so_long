@@ -6,7 +6,7 @@
 /*   By: imeftah- <imeftah-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 22:48:02 by imeftah-          #+#    #+#             */
-/*   Updated: 2025/01/08 12:05:24 by imeftah-         ###   ########.fr       */
+/*   Updated: 2025/01/09 10:44:15 by imeftah-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ static int	incrementation(char *map, int *player, int *exit, int *coin)
 		else if (map[i] == 'C')
 			(*coin)++;
 		else if (map[i] != 'P' && map[i] != 'C' && map[i] != 'E'
-			&& map[i] != '1' && map[i] != '0' && map[i] != 'M')
+			&& map[i] != '1' && map[i] != '0')
 			return (2);
 		i++;
 	}
